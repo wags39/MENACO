@@ -1,4 +1,4 @@
-# Middle East / North Africa Countries Application
+# Middle East / North Africa Countries Overview
 
 ## Table of Contents
 
@@ -40,6 +40,14 @@ live-server
 ```
 
 ## Updates
+
+### Version 1.1 (Sunrise 1.1)
+
+Slight update to **Sunrise** version with spelling errors corrected and _ABOUT_ modal added. Available through clicking on **MENACO** logo within the navigation bar.
+
+Features added include:
+
+- About section modal
 
 ### Version 1.0 (Sunrise)
 

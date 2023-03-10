@@ -78,9 +78,13 @@ const country = document.querySelector(`.state`);
 const populationStats = document.querySelector(`.pop-stat`);
 const religionStats = document.querySelector(`.rel-stat`);
 const gdpStats = document.querySelector(`.gdp-stat`);
+const modal = document.querySelector(`.modal`);
+const overlay = document.querySelector(`.overlay`);
 
 const resetbtn = document.querySelector(`.reset`);
 const btnState = document.querySelectorAll(`.state-btn`);
+const closebtn = document.querySelector(`.close-modal`);
+const logo = document.querySelector(`.logo`);
 
 // Select year variable and change innerHTML to current year
 const year = document.querySelector(`.year`);
@@ -121,3 +125,20 @@ for (let i = 0; i < btnState.length; i++) {
 
 // Add reset funtion to resetbtn
 resetbtn.addEventListener(`click`, reset);
+
+//Modal Operations
+
+const openInfo = () => {
+  modal.classList.remove(`hidden`);
+  overlay.classList.remove(`hidden`);
+};
+
+const closeInfo = () => {
+  modal.classList.add(`hidden`);
+  overlay.classList.add(`hidden`);
+};
+
+logo.addEventListener("click", openInfo);
+
+closebtn.addEventListener(`click`, closeInfo);
+overlay.addEventListener(`click`, closeInfo);
