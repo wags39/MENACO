@@ -4,12 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Middle East App</title>
+    <title>MENACO</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Middle East App</h1>
-    <h3>Version 0.01</h3>
+    <nav class="navbar">
+      <ul class="nav left">
+        <li class="item">
+          <a href="#" class="reset">Reset</a>
+        </li>
+        <li class="item">
+          <a href="#stats" class="btn">Statistics</a>
+        </li>
+        <li class="item">
+          <a href="#choice" class="btn">States</a>
+        </li>
+      </ul>
+      <div class="empty-div"></div>
+      <div class="brand">
+        <h3 class="logo">MENACO</h3>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="box" id="stats">
+        <div class="state-box">
+          <h1 class="state">Country</h1>
+        </div>
+        <div class="stats-box">
+          <div class="info pop-box">
+            <p class="pop-label">Population:</p>
+            <p class="pop-stat">0</p>
+          </div>
+          <div class="info rel-box">
+            <p class="rel-label">Religion:</p>
+            <p class="rel-stat">Atheist</p>
+          </div>
+          <div class="info gdp-box">
+            <p class="gdp-label">GDP:</p>
+            <p class="gdp">$<span class="gdp-stat">0</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="box" id="choice">
+        <h3 class="section-heading">Please select a state:</h3>
+        <div class="countries-box">
+          <button class="state-btn" id="af">Afghanistan</button>
+          <button class="state-btn" id="bh">Bahrain</button>
+          <button class="state-btn" id="eg">Egypt</button>
+          <button class="state-btn" id="ir">Iran</button>
+          <button class="state-btn" id="iq">Iraq</button>
+          <button class="state-btn" id="il">Israel</button>
+          <button class="state-btn" id="jo">Jordan</button>
+          <button class="state-btn" id="lb">Libya</button>
+          <button class="state-btn" id="om">Oman</button>
+          <button class="state-btn" id="qa">Qatar</button>
+          <button class="state-btn" id="sa">Saudi Arabia</button>
+          <button class="state-btn" id="sd">Sudan</button>
+          <button class="state-btn" id="sy">Syria</button>
+          <button class="state-btn" id="tr">Turkey</button>
+          <button class="state-btn" id="ae">United Arab Emirates</button>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="author-box">
+          <p class="author-label">
+            &copy; <span class="year">Year</span> Wags39. All rights reserved.
+          </p>
+        </div>
+        <div class="app-box">
+          <p class="app-label">Middle East & North Africa Countries Overview</p>
+        </div>
+        <div class="version-box">
+          <p class="version-label">version 1.0</p>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

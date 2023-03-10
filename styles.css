@@ -1,28 +1,182 @@
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  background: linear-gradient(to top left, #d41243, #f47835);
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+:root {
+  --color-primary: #d41243;
+  --color-secondary: #f47835;
+  --heading-color: #fffd51;
+  --text-primary: #fff;
+  --footer-primary: #000;
 }
 
-h1,
-h3 {
-  font-family: sans-serif;
-  line-height: 1.3;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  line-height: 1.7;
+  background-color: var(--color-secondary);
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
   width: 100%;
-  padding: 30px;
+  height: auto;
+  padding: 0.625rem 0.3125rem;
+  background-color: var(--color-primary);
+  color: var(--text-primary);
+}
+
+/* left side - nav */
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.left .item {
+  font-size: 0.875rem;
+  margin: auto 1rem;
+}
+
+.item .btn {
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.item .btn:hover {
+  border-bottom: 0.25rem solid var(--color-secondary);
+}
+
+.reset {
+  text-decoration: none;
+  color: var(--text-primary);
+  padding: 10px;
+  background-color: var(--color-secondary);
+}
+
+.reset:hover {
+  background-color: var(--text-primary);
+  color: var(--color-secondary);
+}
+
+/* right side - nav */
+
+.brand {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+/* Main */
+.box {
+  background-color: var(--color-secondary);
+  color: var(--text-primary);
+  padding-top: 50px;
   text-align: center;
 }
 
-h1 {
-  font-size: 50px;
-  color: #fff;
+/* Stats Section */
+
+.stats-box {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-h3 {
-  font-size: 30px;
-  color: #fffd51;
+.info {
+  text-align: center;
+  font-size: 15px;
+}
+
+.pop-label,
+.rel-label,
+.gdp-label {
+  font-size: 20px;
+  color: var(--heading-color);
+}
+
+/* Choice Section */
+
+.section-heading {
+  font-size: 22px;
+  color: var(--heading-color);
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.countries-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.state-btn {
+  background: none;
+  border: none;
+  margin: 5px;
+  padding: 8px 0;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.state-btn:hover {
+  color: var(--color-primary);
+}
+/* Footer */
+
+.footer {
+  width: 100%;
+  background-color: var(--footer-primary);
+  color: var(--text-primary);
+  font-family: sans-serif;
+  padding: 10px;
+  bottom: 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.author-label {
+  text-align: left;
+  font-size: 0.75rem;
+  color: #a8a8a8;
+}
+
+.app-label {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.version-label {
+  text-align: right;
+  font-size: 0.75rem;
+  color: #a8a8a8;
 }
