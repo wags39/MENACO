@@ -1,4 +1,4 @@
-# Middle East / North Africa Countries Overview Application
+# Middle East / North Africa Countries Application
 
 ## Table of Contents
 
@@ -25,7 +25,6 @@ Welcome to the Middle East / North Africa Countries Overview application (MENACO
 npm install -g npm
 
 npm install -g live-server
-
 ```
 
 4. Find the location of the repository on your local device:
@@ -44,7 +43,7 @@ live-server
 
 ### Version 1.0 (Sunrise)
 
-**Sunrise** is the very first user interactive version of the MENACO application. Users must first select a country by clicking on it from a pre-determined list for the information to appear in the **_stats_** section. Currently, all input values for the **Sunrise** version are located in arrays located in _script.js_. Future plans include using an API to create these and more values dynamically. **Please note that currently this ia a desktop-only application.**
+**Sunrise** is the very first user interactive version of the MENACO application. Users must first select a country by clicking on it from a pre-determined list for the information to appear in the **_stats_** section. Currently, all input values for the **Sunrise** version are located in arrays located in _script.js_. Future plans include using an API to create these and more values dynamically. **Please note that currently this is a desktop-only application.**
 
 Features added include:
 
